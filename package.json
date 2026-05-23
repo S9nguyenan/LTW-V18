@@ -1,0 +1,24 @@
+{
+  "name": "web-ban-le-hang-hoa",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Dự án web bán lẻ hàng hóa đơn giản",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "npx nodemon backend/server.js",
+    "frontend:dev": "vite frontend",
+    "frontend:build": "vite build frontend",
+    "frontend:preview": "vite preview frontend"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

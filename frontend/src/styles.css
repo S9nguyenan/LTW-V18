@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.header {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+  color: white;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.search-bar {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon-btn {
+  color: white;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.page-title {
+  padding: 24px 20px 0;
+  text-align: center;
+}
+
+.page-title p {
+  margin-top: 8px;
+  color: #666;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+}
+
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+  margin-top: 0;
+}
+
+.login-box label {
+  display: block;
+  margin: 12px 0 6px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #357abd;
+}
+
+.message {
+  margin-top: 12px;
+  min-height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.message.success {
+  color: #1e6b1e;
+}
+
+.message.error {
+  color: #b71c1c;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .search-bar {
+    min-width: auto;
+    width: 100%;
+  }
+}
